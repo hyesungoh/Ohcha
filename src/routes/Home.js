@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
+import Header from "../components/Header";
 import "./Home.css";
 
 class Home extends React.Component {
@@ -48,8 +49,11 @@ class Home extends React.Component {
                         <span className="loader__text">Loading ...</span>
                     </div>
                 ) : (
-                    <div className="movies">
-                        {movies.map(this.renderMovies)}
+                    <div>
+                        <Header />
+                        <div className="movies">
+                            {movies.map(this.renderMovies)}
+                        </div>
                     </div>
                 )}
             </section>

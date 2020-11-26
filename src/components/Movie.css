@@ -3,7 +3,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    margin-top: 100px;
+    margin-top: 0px;
 
     display: flex;
 
@@ -14,7 +14,7 @@
 }
 
 .movie {
-    background-color: #dfe6e9;
+    background-color: #eaeef0;
     display: flex;
     max-width: 35%;
     min-width: 35%;
@@ -37,7 +37,7 @@
 
 .movies .movie a {
     display: grid;
-    grid-template-columns: minmax(150px, 1fr) 2fr;
+    grid-template-columns: minmax(130px, 150px) 2fr;
     text-decoration: none;
     color: inherit;
 }
