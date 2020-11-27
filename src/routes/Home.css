@@ -22,6 +22,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #dfe6e9;
+    opacity: 0;
+    z-index: -100;
+    transition: all .8s;
+}
+
+.show {
+    z-index: 100;
+    opacity: 1;
 }
 
 .loader__text {

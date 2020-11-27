@@ -13,14 +13,20 @@ class Detail extends React.Component {
         if (location.state) {
             return (
                 <div className="detail">
-                    <img
-                        src={location.state.large_poster}
-                        alt={location.state.title}
-                    ></img>
+                    <div className="detail__image">
+                        <img
+                            src={location.state.large_poster}
+                            alt={location.state.title}
+                        ></img>
+                    </div>
                     <div className="data">
                         <h3>{location.state.title}</h3>
-                        <span>{location.state.year}</span>
-                        <span>{location.state.genres}</span>
+                        <ul>
+                            <li>{location.state.year}</li>
+                            {location.state.genres.map((genre, index) => (
+                                <li key={index}>{genre}</li>
+                            ))}
+                        </ul>
                         <p>{location.state.summary}</p>
                     </div>
                 </div>
