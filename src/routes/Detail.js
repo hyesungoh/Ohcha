@@ -14,7 +14,7 @@ class Detail extends React.Component {
             return (
                 <div className="detail">
                     <img
-                        src={location.state.poster}
+                        src={location.state.large_poster}
                         alt={location.state.title}
                     ></img>
                     <div className="data">

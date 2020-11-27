@@ -8,10 +8,11 @@ function Header() {
             <div className="header__content">
                 <h1>OH-</h1>
                 <h1>CHA</h1>
-                <span>practipowered by nomadcoders movie web api</span>
+                <span>practcing design, powered by nomadcoders movie web</span>
             </div>
-
-            <img src={bg} alt="bg"></img>
+            <div className="header__img">
+                <img src={bg} alt="bg"></img>
+            </div>
         </div>
     );
 }

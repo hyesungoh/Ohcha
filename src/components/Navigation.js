@@ -5,7 +5,6 @@ import "./Navigation.css";
 class Navigation extends React.Component {
     componentDidMount() {
         this.changeNavOpacity();
-        
     }
 
     changeNavOpacity = () => {
@@ -17,13 +16,15 @@ class Navigation extends React.Component {
                 nav.style.opacity = "1";
             }
         };
-    }
+    };
 
     render() {
         return (
             <div className="navigation">
                 <div className="logo">
-                    <h1 className="navi__logo">Ohcha</h1>
+                    <h1 className="navi__logo">
+                        <Link to="/">Ohcha</Link>
+                    </h1>
                 </div>
 
                 <div className="center"></div>
