@@ -48,3 +48,15 @@
 .link a:hover {
     color: #636e72;
 }
+
+@media screen and (max-width: 1024px) {
+    
+    .logo a {
+        font-size: 18px;
+    }
+
+    .link a {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+}

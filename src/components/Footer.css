@@ -22,3 +22,14 @@
 .footer__right span {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        margin-top: 20px;
+        height: 25vh;
+    }
+
+    .footer * {
+        font-size: 12px;
+    }
+}

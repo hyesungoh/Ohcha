@@ -29,3 +29,9 @@
 .about__card div h5{
     opacity: 0.5;
 }
+
+@media screen and (max-width: 1024px) {
+    .about__card {
+        width: 80vw;
+    }
+}

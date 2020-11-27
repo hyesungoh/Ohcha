@@ -40,7 +40,6 @@
     position: relative;
     width: 100%;
     height: auto;
-    
 }
 
 @media screen and (max-width: 1000px) {
@@ -53,27 +52,26 @@
     }
 
     .header__content {
-        height: 35vh;
+        height: 50vh;
         width: 100vw;
     }
 
-    
     .header__img {
-        height: 35vh;
+        height: 50vh;
         width: 100vw;
+    }
 
+    .header__content h1:first-child {
+        margin-top: 0px;
+        font-size: 80px;
     }
 
     .header__content h1 {
         font-size: 80px;
     }
 
-    .header__content h1:first-child {
-        margin-top: 20px;
-        font-size: 80px;
+    .header__content span {
+        margin: 0;
+        font-size: 8px;
     }
-
-    /* .header__content span {
-        font-size: 12p;
-    } */
 }

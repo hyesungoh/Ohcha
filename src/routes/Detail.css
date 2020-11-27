@@ -51,3 +51,31 @@
 .data p {
     line-height: 32px;
 }
+
+@media screen and (max-width: 1024px) {
+    .detail {
+        flex-direction: column;
+    }
+
+    .data {
+        width: 85%;
+        min-height: 25%;
+        left: 0;
+        top: -5%;
+
+        overflow: scroll;
+    }
+
+    .data h3 {
+        font-size: 14px;
+    }
+
+    .data ul {
+        font-size: 10px;
+    }
+    
+    .data p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

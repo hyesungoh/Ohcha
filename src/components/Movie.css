@@ -17,7 +17,6 @@
     display: flex;
     max-width: 35%;
     min-width: 35%;
-    height: 210px;
 
     margin: 20px;
     margin-top: 40px;
@@ -85,13 +84,37 @@
 
 @media screen and (max-width: 1000px) {
     .movies {
+        margin: 0;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
+
+        position: relative;
     }
 
     .movie {
-        max-width: 80%;
+        margin: 0;
+        padding: 0;
+        max-width: 90vw;
+        min-width: 90vw;
+        height: auto;
+
+    }
+
+    .movie__data {
+        overflow: scroll;
+    }
+
+    .movie__title {
+        font-size: 16px;
+    }
+
+    .movie__year,
+    .genres {
+        font-size: 10px;
+    }
+
+    .movie__summary {
+        font-size: 14px;
     }
 }
