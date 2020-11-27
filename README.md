@@ -489,3 +489,60 @@ class Detail extends React.Component {
     ...something
 }
 ```
+
+---
+
+### react-transition-group
+
+-   HashRouter 대신 BrowserRouter 사용하니 동작
+
+-   아래와 같이 작성하여 사용
+
+```jsx
+const AnimatedSwitch = withRouter(({ location }) => (
+    <TransitionGroup>
+        <CSSTransition key={location.key} classNames="fade" timeout={1000}>
+            <Switch location={location}>
+                <Route path="/" exact={true} component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/movie/:id" component={Detail} />
+            </Switch>
+        </CSSTransition>
+    </TransitionGroup>
+));
+
+function App() {
+    return (
+        <BrowserRouter>
+            <Navigation />
+            <AnimatedSwitch />
+        </BrowserRouter>
+    );
+}
+
+export default App;
+```
+
+-   아래와 같이 css 작성하여 사용 (*-enter, *-exit, ...)
+
+```css
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+```
